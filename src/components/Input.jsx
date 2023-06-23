@@ -6,7 +6,7 @@ const Input = () => {
           className="w-full h-[80] bg-transparent border p-5"
           cols="50"
           rows="25"
-          placeholder="Paste your resume here..."
+          placeholder="Paste job description here..."
         ></textarea>
       </div>
 
