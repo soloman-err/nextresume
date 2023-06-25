@@ -8,7 +8,7 @@ const Root = () => {
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <Navbar />
-        <div className="p-5 mt-14">
+        <div className="p-5">
           <Outlet />
         </div>
       </div>

@@ -1,7 +1,7 @@
 const InsertJobDetails = () => {
   return (
     <>
-      <div className="space-y-10">
+      <div className="space-y-5">
         <div>
           <textarea
             className="w-full h-[80] bg-transparent border p-5"
