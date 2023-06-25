@@ -1,17 +1,20 @@
-import { Outlet } from 'react-router-dom';
-import Category from '../components/Category';
-import Input from '../components/Input';
+import { Outlet } from 'react-router-dom'
+import Navbar from '../components/shared/Navbar'
+import Sidebar from '../components/shared/Sidebar'
 
 const Root = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      <Category />
-      <div className="md:w-[60%] overflow-scroll bg-slate-200">
-        <Outlet />
+    <div className="drawer lg:drawer-open">
+      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content">
+        <Navbar />
+        <div className="p-5 mt-14">
+          <Outlet />
+        </div>
       </div>
-      <Input />
+      <Sidebar />
     </div>
-  );
-};
+  )
+}
 
-export default Root;
+export default Root

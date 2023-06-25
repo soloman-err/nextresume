@@ -1,6 +1,6 @@
-import { createBrowserRouter } from 'react-router-dom';
-import Root from '../layouts/Root';
-import Home from '../pages/Home';
+import { createBrowserRouter } from 'react-router-dom'
+import Root from '../layouts/Root'
+import Resume from '../pages/user/resume/Resume'
 
 const router = createBrowserRouter([
   {
@@ -9,10 +9,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
-      },
-    ],
-  },
-]);
+        element: <Resume />
+      }
+    ]
+  }
+])
 
-export default router;
+export default router
