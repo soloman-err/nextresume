@@ -28,7 +28,7 @@ const Home = () => {
         laudantium. Animi, quo.
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
