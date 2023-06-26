@@ -1,7 +1,14 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-200 justify-between">
-      <a className="btn btn-ghost normal-case text-3xl">ResumeCracker</a>
+      <div className="flex flex-col justify-start">
+        <Link to={'/'}>
+          <h2 className="uppercase text-3xl">Alphabetor</h2>
+        </Link>
+        <span className="">Your alphabetic assistant</span>
+      </div>
       <div className="dropdown dropdown-end">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
